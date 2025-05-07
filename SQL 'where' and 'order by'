@@ -1,0 +1,20 @@
+SELECT * FROM Customers 
+WHERE Country='Mexico'; -- This line uses WHERE in which data is returned only if it meets a certain  condition. In this case, all data will be returned if the 'Country' is Mexico.
+SELECT * FROM Customers
+WHERE City IN ('Paris','London'); -- The IN operator specifies multiple possible values for a field/column.
+SELECT * FROM Products
+WHERE Price BETWEEN 50 AND 60; -- The BETWEEN operator specifies a range.
+SELECT * FROM Customers
+WHERE City LIKE 's%'; -- This searches for a pattern
+SELECT * FROM Products
+ORDER BY Price; -- This will return the data in ascending order of price.
+SELECT * FROM Products
+ORDER BY Price DESC; -- This will return the data in descending order of price.
+SELECT * FROM Products
+ORDER BY ProductName; -- For string values, this will return the data in ascending alphabetical order.
+SELECT * FROM Products
+ORDER BY ProductName DESC; -- For string values, this will return the data in descending alphabetical order.
+SELECT * FROM Customers
+ORDER BY Country, CustomerName; -- This line orders by Country, but if some rows have the same Country, it orders them by CustomerName.
+SELECT * FROM Customers
+ORDER BY Country ASC, CustomerName DESC; -- This line selects all customers from the "Customers" table, sorted ascending by the "Country" and descending by the "CustomerName" column.
