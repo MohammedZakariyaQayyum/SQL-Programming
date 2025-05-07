@@ -4,12 +4,4 @@
 SELECT * FROM Customers; -- This line retrieves all info from the Customers table. The * is all info. A semicolon is placed afterwards to allow for more commands to be written.
 SELECT CustomerName,City FROM Customers; -- This line returns the data from the fields, 'CustomerName' and 'City' in the 'Customers' database. The comma is used to separate the two fields wanted.
 SELECT DISTINCT Country FROM Customers; -- Many fields have duplicated data. This line will return only different data from the 'Country' field.
-SELCT COUNT(DISTINCT Country) FROM Customers; -- This line will return the number of differnet values from the 'Country' field.
-SELECT * FROM Customers 
-WHERE Country='Mexico'; -- This line uses WHERE in which data is returned only if it meets a certain  condition. In this case, all data will be returned if the 'Country' is Mexico.
-SELECT * FROM Customers
-WHERE City IN ('Paris','London'); -- The IN operator specifies multiple possible values for a field/column.
-SELECT * FROM Products
-WHERE Price BETWEEN 50 AND 60; -- The BETWEEN operator specifies a range.
-SELECT * FROM Customers
-WHERE City LIKE 's%'; -- This searches for a pattern
+SELECT COUNT(DISTINCT Country) FROM Customers; -- This line will return the number of differnet values from the 'Country' field.
