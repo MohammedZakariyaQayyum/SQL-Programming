@@ -1,0 +1,12 @@
+SELECT * FROM Customers
+WHERE Country = 'Spain' AND CustomerName LIKE 'G%'; -- This line selects all customers from Spain that starts with the letter 'G'.
+SELECT * FROM Customers
+WHERE Country = 'Brazil'
+AND City = 'Rio de Janeiro'
+AND CustomerID > 50; -- This line utilises the AND operator to select data dependent on multiple coniditions.
+SELECT * FROM Customers
+WHERE Country = 'Germany' OR Country = 'Spain'; -- This line uses OR to return data based upon either of two or more conditions but not dependent upon all conditions.
+SELECT * FROM Customers
+WHERE City = 'Berlin' OR CustomerName LIKE 'G%' OR Country = 'Norway'; -- At least on econdsition must be true.
+SELECT * FROM Customers
+WHERE NOT Country = 'Spain'; -- The NOT operator selects data that does not have this condition.
